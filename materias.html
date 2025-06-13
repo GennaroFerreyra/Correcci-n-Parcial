@@ -17,14 +17,12 @@
     <link rel="stylesheet" href="main.css">
 
     <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        const modo = localStorage.getItem("modo");
-        if (modo === "oscuro") {
-          document.documentElement.classList.add("dark-mode");
-        } else {
-          document.documentElement.classList.add("light-mode");
-        }
-      });
+      const modo = localStorage.getItem("modo");
+      if (modo === "oscuro") {
+        document.documentElement.classList.add("dark-mode");
+      } else {
+        document.documentElement.classList.add("light-mode");
+      }
     </script>
   </head>
 
@@ -150,34 +148,6 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-      function ajustarEspacios() {
-        const footer = document.getElementById("main-footer");
-        const header = document.querySelector("header nav");
-        const main = document.querySelector("main");
-
-        if (footer && header && main) {
-          const alturaFooter = footer.offsetHeight;
-          const alturaHeader = header.offsetHeight;
-          main.style.paddingTop = alturaHeader + "px";
-          main.style.paddingBottom = alturaFooter + "px";
-        }
-      }
-
-      window.addEventListener("load", ajustarEspacios);
-      window.addEventListener("resize", ajustarEspacios);
-
-      function setDarkMode() {
-        document.documentElement.classList.add("dark-mode");
-        document.documentElement.classList.remove("light-mode");
-        localStorage.setItem("modo", "oscuro");
-      }
-
-      function setLightMode() {
-        document.documentElement.classList.add("light-mode");
-        document.documentElement.classList.remove("dark-mode");
-        localStorage.setItem("modo", "claro");
-      }
-    </script>
+    <script src="main.js" defer></script>
   </body>
 </html>
