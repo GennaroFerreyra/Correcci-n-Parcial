@@ -1,0 +1,136 @@
+main {
+    transition: padding 0.3s ease-in-out;
+}
+
+.hover-move {
+    transition: transform 0.3s ease;
+}
+
+.hover-move:hover {
+    transform: translateY(-5px);
+}
+
+.mode-toggle-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+/* Transiciones suaves al cambiar de modo */
+body,
+header nav,
+form,
+.card,
+.card-header,
+.card-body,
+.btn,
+.table,
+.table th,
+.table td,
+footer {
+    transition: background-color 0.6s ease, color 0.6s ease, border-color 0.6s ease;
+}
+
+/* MODO CLARO */
+.light-mode body {
+    background-color: white;
+    color: black;
+}
+
+.light-mode header nav {
+    background-color: #0d6efd !important;
+}
+
+/* MODO OSCURO */
+.dark-mode body {
+    background-color: #6c757d;
+    color: white;
+}
+
+.dark-mode header nav {
+    background-color: #212529 !important;
+}
+
+/* FORMULARIO EN MODO OSCURO */
+.dark-mode form {
+    background-color: #000;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.dark-mode form .form-label {
+    color: white;
+}
+
+.dark-mode form .form-control {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+.dark-mode form .form-control::placeholder {
+    color: #ccc;
+}
+
+.dark-mode form textarea.form-control {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+/* CARD EN MODO OSCURO */
+.dark-mode .card {
+    background-color: #000;
+    color: white;
+    border-color: white;
+}
+
+.dark-mode .card-header {
+    background-color: #343a40;
+    color: white;
+}
+
+.dark-mode .card-body {
+    color: #fff;
+}
+
+/* BTN EN MODO OSCURO */
+.dark-mode .btn {
+    background-color: #343a40;
+    color: #fff;
+    border-color: #343a40;
+}
+
+.dark-mode .btn:hover {
+    background-color: #495057;
+    border-color: #495057;
+}
+
+/* ICON */
+.dark-mode .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* TABLA MODO CLARO */
+.light-mode .table {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .table th,
+.light-mode .table td {
+    border: 1px solid #dee2e6 !important;
+}
+
+/* TABLA MODO OSCURO */
+html.dark-mode .table,
+html.dark-mode .table th,
+html.dark-mode .table td {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
