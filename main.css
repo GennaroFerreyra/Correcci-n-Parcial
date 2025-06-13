@@ -169,8 +169,21 @@ html.dark-mode .table td {
     color: #fff !important;
 }
 
+/* Solo el botón del formulario de contacto en modo oscuro */
+.dark-mode #contactForm .btn.btn-primary {
+    background-color: #444 !important;
+    border-color: #444 !important;
+    color: #fff !important;
+}
+
 .dark-mode .btn.btn-primary:hover {
     background-color: #2a2a2a !important;
     border-color: #2a2a2a !important;
+    color: #fff !important;
+}
+
+.dark-mode #contactForm .btn.btn-primary:hover {
+    background-color: #222 !important;
+    border-color: #222 !important;
     color: #fff !important;
 }
