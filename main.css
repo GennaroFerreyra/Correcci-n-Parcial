@@ -150,3 +150,27 @@ html.dark-mode .table td {
 .light-mode .nav-link.active {
     border-bottom-color: #000;
 }
+
+/* Modo oscuro para cards y listas */
+.dark-mode .card ul,
+.dark-mode .card li {
+    color: #fff !important;
+    list-style: disc outside;
+}
+
+.dark-mode .col .border {
+    background-color: #343a40 !important;
+    color: #fff !important;
+}
+
+.dark-mode .btn.btn-primary {
+    background-color: #000 !important;
+    border-color: #000 !important;
+    color: #fff !important;
+}
+
+.dark-mode .btn.btn-primary:hover {
+    background-color: #2a2a2a !important;
+    border-color: #2a2a2a !important;
+    color: #fff !important;
+}
