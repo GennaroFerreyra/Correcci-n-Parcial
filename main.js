@@ -51,27 +51,13 @@ if (window.location.pathname.includes("contacto.html")) {
         const asunto = document.getElementById("asunto");
         const mensaje = document.getElementById("mensaje");
 
-        if (!nombre.value.trim()) {
-          alert("Por favor, completá el campo: Nombre");
-          nombre.focus();
-          return;
-        }
-
-        if (!email.value.trim()) {
-          alert("Por favor, completá el campo: Email");
-          email.focus();
-          return;
-        }
-
-        if (!asunto.value.trim()) {
-          alert("Por favor, completá el campo: Asunto");
-          asunto.focus();
-          return;
-        }
-
-        if (!mensaje.value.trim()) {
-          alert("Por favor, completá el campo: Mensaje");
-          mensaje.focus();
+        if (
+          !nombre.value.trim() ||
+          !email.value.trim() ||
+          !asunto.value.trim() ||
+          !mensaje.value.trim()
+        ) {
+          alert("Por favor, completá todos los campos antes de enviar el formulario.");
           return;
         }
 
