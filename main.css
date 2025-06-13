@@ -134,3 +134,19 @@ html.dark-mode .table td {
     color: #ffffff !important;
     border-color: #ffffff !important;
 }
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
+
+/* Estilos para modo oscuro */
+.dark-mode .nav-link.active {
+    border-bottom-color: #fff !important;
+}
+
+/* Estilos para modo claro */
+.light-mode .nav-link.active {
+    border-bottom-color: #000;
+}
